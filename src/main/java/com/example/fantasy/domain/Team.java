@@ -1,9 +1,6 @@
 package com.example.fantasy.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Team {
@@ -12,4 +9,14 @@ public class Team {
     @GeneratedValue
     private Long tid;
 
+    public Team() {
+    }
+
+    public Long getTid() {
+        return tid;
+    }
+
+    public void setTid(Long tid) {
+        this.tid = tid;
+    }
 }
