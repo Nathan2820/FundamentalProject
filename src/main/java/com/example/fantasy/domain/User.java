@@ -7,7 +7,7 @@ public class User {
 
     @Id
     @GeneratedValue
-    private int uid;
+    private Long uid;
 
     @Column
     private String forename;
@@ -23,11 +23,11 @@ public class User {
         this.surname = surname;
     }
 
-    public int getUid() {
+    public Long getUid() {
         return uid;
     }
 
-    public void setUid(int uid) {
+    public void setUid(Long uid) {
         this.uid = uid;
     }
 
