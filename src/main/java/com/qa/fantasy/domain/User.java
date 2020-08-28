@@ -1,4 +1,4 @@
-package com.example.fantasy.domain;
+package com.qa.fantasy.domain;
 
 import javax.persistence.*;
 

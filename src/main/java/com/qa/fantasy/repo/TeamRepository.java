@@ -1,6 +1,6 @@
-package com.example.fantasy.repo;
+package com.qa.fantasy.repo;
 
-import com.example.fantasy.domain.Team;
+import com.qa.fantasy.domain.Team;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

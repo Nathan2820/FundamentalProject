@@ -1,8 +1,8 @@
-package com.example.fantasy.service;
+package com.qa.fantasy.service;
 
-import com.example.fantasy.domain.Team;
-import com.example.fantasy.exceptions.TeamNotFoundException;
-import com.example.fantasy.repo.TeamRepository;
+import com.qa.fantasy.domain.Team;
+import com.qa.fantasy.exceptions.TeamNotFoundException;
+import com.qa.fantasy.repo.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

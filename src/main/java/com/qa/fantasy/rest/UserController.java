@@ -1,7 +1,7 @@
-package com.example.fantasy.rest;
+package com.qa.fantasy.rest;
 
-import com.example.fantasy.domain.User;
-import com.example.fantasy.service.UserService;
+import com.qa.fantasy.domain.User;
+import com.qa.fantasy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

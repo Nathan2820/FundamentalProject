@@ -1,7 +1,7 @@
-package com.example.fantasy.service;
+package com.qa.fantasy.service;
 
-import com.example.fantasy.domain.User;
-import com.example.fantasy.repo.UserRepository;
+import com.qa.fantasy.domain.User;
+import com.qa.fantasy.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
