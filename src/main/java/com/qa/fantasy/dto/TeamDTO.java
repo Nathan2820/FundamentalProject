@@ -1,21 +1,17 @@
-package com.qa.fantasy.domain;
+package com.qa.fantasy.dto;
 
-import javax.persistence.*;
+public class TeamDTO {
 
-@Entity
-public class Team {
-
-    @Id
-    @GeneratedValue
     private Long tid;
-
-    @Column
     private String teamName;
+    private List<PlayerDTO> players = new ArrayList<>();
 
-    public Team() {
+    public TeamDTO() {
+
     }
 
-    public Team(String teamName) {
+    public TeamDTO(String teamName) {
+        super();
         this.teamName = teamName;
     }
 
@@ -33,5 +29,13 @@ public class Team {
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;
+    }
+
+    public List<PlayerDTO> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<PlayerDTO> players) {
+        this.players = players;
     }
 }
