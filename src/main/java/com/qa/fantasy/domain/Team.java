@@ -3,6 +3,8 @@ package com.qa.fantasy.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "players"})
@@ -14,6 +16,9 @@ public class Team {
 
     @Column
     private String teamName;
+
+    @OneToMany(mappedBy = "enrollment", fetch = FetchType.EAGER)
+    private List<Enrollment> players = new ArrayList<>();
 
     public Team() {
     }
@@ -36,5 +41,13 @@ public class Team {
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;
+    }
+
+    public List<Enrollment> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Enrollment> players) {
+        this.players = players;
     }
 }
