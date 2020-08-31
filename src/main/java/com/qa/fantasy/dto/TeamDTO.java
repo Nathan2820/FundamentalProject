@@ -4,7 +4,7 @@ public class TeamDTO {
 
     private Long tid;
     private String teamName;
-    private List<PlayerDTO> players = new ArrayList<>();
+    //private List<PlayerDTO> players = new ArrayList<>();
 
     public TeamDTO() {
 
@@ -31,11 +31,11 @@ public class TeamDTO {
         this.teamName = teamName;
     }
 
-    public List<PlayerDTO> getPlayers() {
-        return players;
-    }
+//    public List<PlayerDTO> getPlayers() {
+//        return players;
+//    }
 
-    public void setPlayers(List<PlayerDTO> players) {
-        this.players = players;
-    }
+//    public void setPlayers(List<PlayerDTO> players) {
+//        this.players = players;
+//    }
 }
