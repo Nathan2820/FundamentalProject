@@ -10,7 +10,7 @@ public class Player {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private Long pid;
 
     @Column
     private String name;
@@ -31,11 +31,11 @@ public class Player {
     }
 
     public Long getId() {
-        return id;
+        return pid;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long pid) {
+        this.pid = pid;
     }
 
     public String getName() {

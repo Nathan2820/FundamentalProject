@@ -1,8 +1,11 @@
 package com.qa.fantasy.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "players"})
 public class Team {
 
     @Id
