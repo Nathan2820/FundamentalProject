@@ -1,13 +1,8 @@
 package com.qa.fantasy.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "teams"})
 public class Player {
 
     @Id
@@ -23,8 +18,8 @@ public class Player {
     @Column
     private Long age;
 
-    @OneToMany(mappedBy = "player", fetch = FetchType.EAGER)
-    private List<Enrollment> teams = new ArrayList<>();
+    @ManyToOne(targetEntity = Team.class)
+    private Team team;
 
     public Player() {
     }
@@ -67,11 +62,11 @@ public class Player {
         this.age = age;
     }
 
-    public List<Enrollment> getTeams() {
-        return teams;
+    public Team getTeam() {
+        return team;
     }
 
-    public void setTeams(List<Enrollment> teams) {
-        this.teams = teams;
+    public void setTeam(Team team) {
+        this.team = team;
     }
 }

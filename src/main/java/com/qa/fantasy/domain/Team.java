@@ -17,8 +17,8 @@ public class Team {
     @Column
     private String teamName;
 
-    @OneToMany(mappedBy = "enrollment", fetch = FetchType.EAGER)
-    private List<Enrollment> players = new ArrayList<>();
+    @OneToMany(mappedBy = "team", fetch = FetchType.EAGER)
+    private List<Player> players = new ArrayList<>();
 
     public Team() {
     }
@@ -43,11 +43,11 @@ public class Team {
         this.teamName = teamName;
     }
 
-    public List<Enrollment> getPlayers() {
+    public List<Player> getPlayers() {
         return players;
     }
 
-    public void setPlayers(List<Enrollment> players) {
+    public void setPlayers(List<Player> players) {
         this.players = players;
     }
 }
