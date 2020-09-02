@@ -4,12 +4,11 @@ function displayTeams() {
         if (req.status === 200 && req.readyState === 4) {
             if (req.getResponseHeader("Content-type") === "application/json") {
                 console.log("JSON: " + req.responseText);
-
                 let content = JSON.parse(req.response);
                 content.forEach(el => {
                     let elem = document.createElement('div');
                     let header = document.createElement('h4');
-                    header.textContent = "Team name: " + el.name;
+                    header.textContent = "Team name: " + el.teamName;
                     elem.appendChild(header);
                     el.players.forEach(player => {
                         let info = document.createElement('p');

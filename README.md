@@ -16,7 +16,7 @@ needs to be addressed. Each project has its own potential risks,
 and mine is no exception. Because of this, I have analysed risks
 which cover the whole scope of the project as to ensure that
 each area has precautions in place to ensure that the risks are
-mitigated not only in specific areas but as a whole for the project.
+mitigated, not only in specific areas but as a whole for the project.
 
 Within my risk assessment I will be using different levels to classify the risks
 in given areas, these are as follows:
@@ -41,4 +41,5 @@ in given areas, these are as follows:
     
 | Risk | Description | Likelihood | Impact | Responsibility | Current Mitigation | Intended Mitigation | Response | Tolerate? |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  |  |  |  |  |  |  |  |  |
+| Unable to access SQL Database | For any array of reasons (no internet connection for example), accessing GCP to access the mySQL database could fail and not be possible and this would result in the web application being in an unusable state. | Low | Medium | GCP | None | Setup multiple local and external backups of the Database so that it can be hosted from multiple locations. | Try to access GCP multiple times and if this still fails then contact the GCP helpline. | tolerate |
+| Unable to access the VM hosting the DB | If for some reason the specific VM hosting the DB becomes inaccessible on GCP the web application will no longer be able to perform the required tasks. | Low | | | | | | |
