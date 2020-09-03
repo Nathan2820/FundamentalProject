@@ -31,9 +31,10 @@ public class TeamController {
     }
 
     @DeleteMapping("/deleteTeam/{id}")
-    public Boolean deleteTeam(@PathVariable Long id)
-    {
-        return this.teamService.deleteTeamById(id);
+    public ResponseEntity<?> deleteTeam(@PathVariable Long id) {
+        return this.teamService.deleteTeamById(id)
+                ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+                : ResponseEntity.noContent().build();
     }
 
     @GetMapping("/viewTeamById/{id}")

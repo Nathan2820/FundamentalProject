@@ -8,11 +8,12 @@ function displayTeams() {
                 content.forEach(el => {
                     let elem = document.createElement('div');
                     let header = document.createElement('h4');
-                    header.textContent = "Team name: " + el.teamName;
+                    let teamId = el.tid;
+                    header.textContent = "Team name: " + el.teamName + " id: " + teamId;
                     elem.appendChild(header);
                     el.players.forEach(player => {
                         let info = document.createElement('p');
-                        info.textContent = "Name: " + player.name + " Position: " + player.position + " Age: " + player.age;
+                        info.textContent = "Name: " + player.name + " Position: " + player.position + " Age: " + player.age + " id: " + player.id;
                         elem.appendChild(info);
                     })
                     document.body.appendChild(elem);
