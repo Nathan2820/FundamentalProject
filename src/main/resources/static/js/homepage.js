@@ -12,7 +12,7 @@ function displayTeams() {
                     elem.appendChild(header);
                     el.players.forEach(player => {
                         let info = document.createElement('p');
-                        info.textContent = "Name: " + player.name + " Position: " + player.position + " Age: " + player.age;
+                        info.textContent = "Name: " + player.name + <br> + " Position: " + player.position + <br> + " Age: " + player.age;
                         elem.appendChild(info);
                     })
                     document.body.appendChild(elem);

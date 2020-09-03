@@ -14,5 +14,5 @@ function submitTeam() {
     };
     req.setRequestHeader("Content-type", "application/json;charset=UTF-8");
     //alert(obj.name + " is the team name");
-    req.send(JSON.stringify({ "teamName" : obj.name }));
+    req.send(JSON.stringify({ teamName : obj.name }));
 }

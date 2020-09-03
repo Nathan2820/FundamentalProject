@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SubmitPlayer</title>
+    <script src="../js/submitPlayer.js"></script>
+</head>
+<body>
+    <a href="../html/Homepage.html">Home</a>
+    <h1>Create Player</h1>
+    <form id="playerForm">
+        <label for="name">Player name: </label>
+        <input type="text" id="name" name="name"><br>
+        <label for="position">Position: </label>
+        <input type="text" id="position" name="position"><br>
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age"><br>
+        <label for="tid">Team id: </label>
+        <input type="number" id="tid" name="tid"><br>
+        <input type="submit" onclick="submitPlayer()" value="Add Player">
+    </form>
+</body>
+</html>
