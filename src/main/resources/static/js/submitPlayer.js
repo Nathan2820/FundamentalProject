@@ -15,6 +15,6 @@ function submitPlayer() {
         }
     };
     req.setRequestHeader("Content-type", "application/json;charset=UTF-8");
-    alert("The tid is " + obj.tid);
+    //alert("The tid is " + obj.tid);
     req.send(JSON.stringify({ name: obj.name, position: obj.position, age: obj.age, team:{ tid: Number(obj.tid)} }));
 }
