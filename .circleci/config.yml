@@ -17,7 +17,7 @@ jobs:
           command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/Nathan2820/FundamentalProject.git && cd ~/FundamentalProject && sudo apt-get install -y maven"
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/FundamentalProject && mvn spring-boot:run --debug"
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/FundamentalProject && mvn spring-boot:run"
 workflows:
   version: 2.1
   test-and-deploy:
