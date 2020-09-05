@@ -1,9 +1,4 @@
 version: 2.1
-service: sb-gcp
-env: flex
-runtime: java
-runtime_config:
-  jdk: openjdk8
 jobs:
   test:
     machine:
