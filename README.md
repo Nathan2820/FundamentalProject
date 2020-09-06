@@ -110,6 +110,8 @@ had hosted on GCP and this then allowed my web app to send user data to the DB w
 ## Future Improvements
 The web application is in a very "bare bones" state, the UI is not very intuitive and easy to use so if given more time I would like to improve
 this.
+Given the time constraint on the project, as a cohort we were not able to cover automated testing or testing within spring boot and so that would
+be something I would like to implement in the future.
 
 ## Acknowledgements
 I would like to acknowledge my two trainers Jay Grindrod and Tadas Vaidotas who were always there to help whenever I hit a problem.
