@@ -111,5 +111,5 @@ had hosted on GCP and this then allowed my web app to send user data to the DB w
 The web application is in a very "bare bones" state, the UI is not very intuitive and easy to use so if given more time I would like to improve
 this.
 
-##Acknowledgements
+## Acknowledgements
 I would like to acknowledge my two trainers Jay Grindrod and Tadas Vaidotas who were always there to help whenever I hit a problem.
