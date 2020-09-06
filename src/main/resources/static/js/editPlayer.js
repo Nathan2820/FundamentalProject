@@ -7,7 +7,7 @@ function editPlayer() {
     }
     let playerId = obj.pid;
     const req = new XMLHttpRequest();
-    req.open("PUT", "http://localhost:8080/updatePlayer?id=" + playerId);
+    req.open("PUT", "http://35.246.104.126:8080/updatePlayer?id=" + playerId);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server responded with: " + req.responseText);
