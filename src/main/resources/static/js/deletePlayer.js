@@ -6,7 +6,7 @@ function deletePlayer() {
     const req = new XMLHttpRequest();
     let id = obj.pid;
     alert(id);
-    req.open("DELETE", "http://35.246.104.126:8080/deletePlayer/" + id);
+    req.open("DELETE", "http://35.234.158.15:8080/deletePlayer/" + id);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server responded with: " + req.responseText);
