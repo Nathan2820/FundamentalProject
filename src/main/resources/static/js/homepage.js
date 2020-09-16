@@ -25,6 +25,6 @@ function displayTeams() {
             console.log("Oh no... handle error");
         }
     };
-    req.open("GET", "http://35.234.158.15:8080/viewAllTeams");
+    req.open("GET", "http://34.105.160.58:8080/viewAllTeams");
     req.send();
 }
