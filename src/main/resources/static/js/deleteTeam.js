@@ -6,7 +6,7 @@ function deleteTeam() {
     const req = new XMLHttpRequest();
     let id = obj.tid;
     //alert(id);
-    req.open("DELETE", "http://34.105.160.58/deleteTeam/" + id);
+    req.open("DELETE", "http://localhost:8080/deleteTeam/" + id);
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server responded with: " + req.responseText);
