@@ -6,7 +6,7 @@ function submitPlayer() {
         obj[item.name] = item.value;
     }
     const req = new XMLHttpRequest();
-    req.open("POST", "http://34.89.6.97/createPlayer");
+    req.open("POST", "http://34.89.6.97:8080/createPlayer");
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server responded with: " + req.responseText);
