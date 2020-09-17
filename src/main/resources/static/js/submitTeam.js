@@ -4,7 +4,7 @@ function submitTeam() {
     let item = elements.item(0);
     obj[item.name] = item.value;
     const req = new XMLHttpRequest();
-    req.open("POST", "http://34.105.160.58:8080/createTeam");
+    req.open("POST", "http://34.105.160.58/createTeam");
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
             console.log("Server responded with: " + req.responseText);
